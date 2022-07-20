@@ -1,0 +1,10 @@
+
+@use 'sass:math';
+
+@function rem($pixcel){
+    @return math.div($pixcel, 16) + rem;
+}
+
+@function em($pixcel){
+    @return math.div($pixcel, 16) + em;
+}
