@@ -1,3 +1,4 @@
+@use '../utility' as u;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
 
 :root {
@@ -8,7 +9,7 @@
     --VeryDarkCyan: hsl(192, 100%, 9%);
     --VeryPaleBlue: hsl(207, 100%, 98%);
 
-    --white: hsl(255,100%, 100%);
+    --White: hsl(255,100%, 100%);
 
     
 }
@@ -16,9 +17,40 @@
 body {
     background-color: var(--white);
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    height: 3200px;
 }
 
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
 footer{
     background-color: var(--VeryPaleBlue);
+}
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+.design{
+    position: fixed;
+    top: -500px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    height: 4654.55px;
+    width: 375px;
+    background-image: url(/design/mobile-design.jpg);
+    opacity: 0;
+    z-index: -1;
+
+    @include u.breakpoint-up(medium){
+        height: 4654.55px;
+        width: 1440px;
+        background-image: url(/design/desktop-design.jpg);
+    }
 }

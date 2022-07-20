@@ -1,0 +1,48 @@
+.hero{
+
+    
+    &__container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    &__text{
+        max-width: 300px;
+    }
+
+
+    p{
+        margin-top: 22px;
+        font-size: 14px;
+    }
+
+    &__cta{
+        margin: 48px;
+        background-color: var(--Pink);
+        height: 40px;
+        width: 200px;
+        border-radius: 20px;
+        color: var(--White);
+        font-size: 12px;
+        border: none;
+        box-shadow: 0px 3px 8px 1px hsl(0 0% 0% / 0.3);
+    }
+
+    &__image{
+        margin-top: 53px;
+        width: 80vw;
+        max-width: 1034px;
+        height: 60vw;
+        background-image: url(/images/screen-mockups.svg);
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+       filter: drop-shadow(0px 3px 4px hsl(0 0% 0% / 0.2));
+
+    }
+
+}
+
