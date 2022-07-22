@@ -38,14 +38,14 @@ footer{
 
 .design{
     position: fixed;
-    top: -500px;
+    top: -600px;
     left: 50%;
     transform: translateX(-50%);
     margin: auto;
     height: 4654.55px;
     width: 375px;
     background-image: url(/design/mobile-design.jpg);
-    opacity: 0;
+    opacity: 0.8;
     z-index: -1;
 
     @include u.breakpoint-up(medium){

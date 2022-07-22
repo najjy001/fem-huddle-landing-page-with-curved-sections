@@ -69,7 +69,8 @@
 
         @include u.breakpoint-up(large){
             height: u.rem(40);
-            width: u.rem(140);
+            width: u.rem(135);
+            margin-right: u.rem(4);
             border-radius: u.rem(20);
             font-size: u.rem(16);
         }
